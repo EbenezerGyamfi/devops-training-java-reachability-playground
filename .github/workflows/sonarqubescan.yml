@@ -14,10 +14,11 @@ jobs:
         distribution: 'zulu'
         cache: maven
     - name: Build with Maven cloud
-      run:  mvn -B verify sonar:sonar -Dsonar.projectKey=EbenezerGyamfi -Dsonar.organization=EbenezerGyamfi_devops-training-java-reachability-playground -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$SONARCUBEKEY
+      run:  mvn -B verify sonar:sonar -Dsonar.projectKey=EbenezerGyamfi_devops-training-java-reachability-playground  -Dsonar.organization=EbenezerGyamfi -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=$SONARCUBEKEY
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONARCUBEKEY }}
 
 
 
+ebenezergyamfi
